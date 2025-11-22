@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Discover Amazing Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>musomesa movie hub</h1>
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search for movies...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover Your Next Favorite Movie</h2>
+            <p>Explore thousands of movies with details, ratings, and more</p>
+        </section>
+
+        <section class="categories">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="popular">Popular</button>
+                <button class="category-btn" data-category="top_rated">Top Rated</button>
+                <button class="category-btn" data-category="upcoming">Upcoming</button>
+                <button class="category-btn" data-category="now_playing">Now Playing</button>
+            </div>
+        </section>
+
+        <section class="movies-container">
+            <div id="loading" class="loading">Loading movies...</div>
+            <div id="moviesGrid" class="movies-grid"></div>
+            <div id="errorMessage" class="error-message" style="display: none;">
+                Failed to load movies. Please try again later.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Musomesa movie hub. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
