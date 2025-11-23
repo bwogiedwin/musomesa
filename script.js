@@ -3,7 +3,7 @@
 // ================================
 // REPLACE 'YOUR_API_KEY_HERE' WITH YOUR ACTUAL TMDB API KEY
 // Get your free API key from: https://www.themoviedb.org/settings/api
-const API_KEY = 'dbed69351567c2e24f34dffba1311fab'; // ← PUT YOUR API KEY HERE
+const API_KEY = '8d856a5d8bdfbdf260ce95f9b0b49f26'; // ← PUT YOUR API KEY HERE
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
@@ -214,4 +214,5 @@ window.addEventListener('scroll', () => {
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     fetchMoviesByCategory('popular');
+
 });
